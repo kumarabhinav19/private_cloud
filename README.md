@@ -1,0 +1,2 @@
+# privatecloud
+A private cloud provides cloud computing services for authorized users over the internet or an internal network. Since it can only be used by a clearly defined group of users, the private cloud is also referred to as a corporate cloud or internal cloud. Private cloud users benefit from the advantages of cloud computing, like scalability and elasticity, but also from additional control and adaptation options that the private cloud can offer.
