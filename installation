@@ -1,0 +1,56 @@
+# grep -E 'svm|vmx' /proc/cpuinfo | grep nx
+# yum install https://resources.ovirt.org/pub/yum-repo/ovirt-release44.rpm
+# yum module -y enable javapackages-tools
+# yum module -y enable pki-deps
+# yum module -y enable postgresql:12
+# yum update
+# yum install ovirt-engine
+# engine-setup
+Configure Engine on this host (Yes, No) [Yes]:
+Configure ovirt-provider-ovn and set the Default cluster’s default network provider to ovirt-provider-ovn (non-Default clusters may be configured with an OVN provider after installation) (Yes, No) [Yes]:
+Configure Image I/O Proxy on this host? (Yes, No) [Yes]:
+Configure WebSocket Proxy on this machine? (Yes, No) [Yes]:
+Please note: Data Warehouse is required for the engine. If you choose to not configure it on this host, you have to configure it on a remote host, and then configure the engine on this host so that it can access the database of the remote Data Warehouse host.
+Configure Data Warehouse on this host (Yes, No) [Yes]
+Configure VM Console Proxy on this host (Yes, No) [Yes]:
+Host fully qualified DNS name of this server [autodetected host name]:
+Setup can automatically configure the firewall on this system.
+Note: automatic configuration of the firewall may overwrite current settings.
+Do you want Setup to configure the firewall? (Yes, No) [Yes]
+Where is the DWH database located? (Local, Remote) [Local]:
+Setup can configure the local postgresql server automatically for the DWH to run. This may conflict with existing applications.
+Would you like Setup to automatically configure postgresql and create DWH database, or prefer to perform that manually? (Automatic, Manual) [Automatic]:
+DWH database secured connection (Yes, No) [No]:
+DWH database name [ovirt_engine_history]:
+DWH database user [ovirt_engine_history]:
+DWH database password
+DWH database host [localhost]:
+DWH database port [5432]:
+DWH database secured connection (Yes, No) [No]:
+DWH database name [ovirt_engine_history]:
+DWH database user [ovirt_engine_history]:
+DWH database password
+Where is the Engine database located? (Local, Remote) [Local]:
+Setup can configure the local postgresql server automatically for the engine to run. This may conflict with existing applications.
+Would you like Setup to automatically configure postgresql and create Engine database, or prefer to perform that manually? (Automatic, Manual) [Automatic]:Engine database secured connection (Yes, No) [No]:
+Engine database name [engine]:
+Engine database user [engine]:
+Engine database password:
+Engine admin password:
+Confirm engine admin password:
+Application mode (Both, Virt, Gluster) [Both]:
+Use default credentials (admin@internal) for ovirt-provider-ovn (Yes, No) [Yes]:
+oVirt OVN provider user[admin@internal]:
+oVirt OVN provider password:
+
+Default SAN wipe after delete (Yes, No) [No]:
+Organization name for certificate [autodetected domain-based name]:
+Setup can configure the default page of the web server to present the application home page. This may conflict with existing applications.
+Do you wish to set the application as the default web page of the server? (Yes, No) [Yes]:
+Setup can configure apache to use SSL using a certificate issued from the internal CA.
+Do you wish Setup to configure that, or prefer to perform that manually? (Automatic, Manual) [Automatic]
+Please choose Data Warehouse sampling scale:
+(1) Basic
+(2) Full
+(1, 2)[1]:
+Please confirm installation settings (OK, Cancel) [OK]:
